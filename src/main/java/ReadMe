@@ -1,0 +1,27 @@
+Aplikacja ma na celu wysyłanie zapytań do bazy SQL z poziomu konsoli.
+
+Insert
+1.	Napisz zapytanie SQL odpowiedzialne za wprowadzanie rekordu z wybranymi przez Ciebie wartościami do tabeli movies.. Wartość powinna być wprowadzona dla każdej z kolumn.
+2.	Napisz zapytanie SQL odpowiedzialne za wprowadzanie nowego rekordu to tabeli movies. Wprowadź wartości tylko dla kolumn: movie_id i movie_name.
+3.	Napisz zapytanie SQL odpowiedzialne za wprowadzanie nowego rekordu do tabeli. Jako wartość kolumny movie_type wprowadź wartość NULL.
+4.	Napisz zapytanie SQL odpowiedzialne za wprowadzenie jednorazowo 3 rekordów do tabeli movies.
+5.	Napisz zapytanie SQL odpowiedzialne za skopiowanie rekordów z tabeli movies do nowo stworzonej tabeli movies_new.
+6.	Napisz zapytanie SQL odpowiedzialne za wprowadzanie rekordów to tabeli movies. Kolumna movie_id powinna być unikalna i auto-inkrementowana.
+7.	Napisz zapytanie SQL odpowiedzialne za wprowadzanie rekordów do tabeli movies. Zapewnij, by kolumna movie_id nie zawierała z duplikowanych danych oraz że będzie automatycznie zwiększać swoją wartość. Jeśli żadna wartość nie zostanie przypisana do kolumny movie_name, powinna być uzupełniona jako N/A.
+8.	Napisz zapytanie SQL odpowiedzialne za wprowadzanie pojedynczego wiersza do tabeli company. Zapewnij, że kolumna company_id nie będzie zawierać z duplikowanych wartości.
+9.	Napisz zapytanie SQL odpowiedzialne za wprowadzenie rekordów do tabeli job_offer. Kolumna company_id powinna zawierać wartości istniejące w kolumnie company_id w tabeli company.
+Update
+1.	Napisz zapytanie SQL odpowiedzialne za modyfikację kolumny movie_name w tabeli movies tak, by domyślnie zawierała ona tekst To be done dla każdego filmu w bazie danych.
+2.	Napisz zapytanie SQL odpowiedzialne za modyfikację wartości kolumny movie_rating w tabeli movies na wartość 8 dla tych rekordów, dla których movie_type jest równy Anime.
+3.	Napisz zapytanie SQL odpowiedzialne za modyfikację wartości kolumny movie_name tabeli movies na tekst Only for adults dla tych rekordów, dla których movie_type jest równy Horror i dla których movie_raring jest równy bądź większy niż 18.
+4.	Napisz zapytanie SQL odpowiedzialne za modyfikację kolumny offer_title tabeli job_offer tak, by zawierała wartość outdated dla tych firm z tabeli company, dla których number_of_employee jest większa niż 10000.
+Delete
+1.	Napisz zapytanie SQL odpowiedzialne za usuwanie wszystkich rekordów z tabeli movies.
+2.	Napisz zapytanie SQL odpowiedzialne za usuwanie wszystkich rekordów z tabeli movies, dla których movie_type jest równy Action.
+3.	Napisz zapytanie SQL odpowiedzialne za usuwanie rekordów, dla których movie_rating jest mniejszy niż 15.
+4.	Napisz zapytanie SQL odpowiedzialne za usuwanie każdej oferty z tabeli job_offer, która jest powiązana z firmą zatrudniającą ponad 200pracowników.
+Select
+1.	Napisz zapytanie SQL odpowiedzialne za zwracanie wszystkich rekordów z tabeli movies.
+2.	Napisz zapytanie SQL odpowiedzialne za wyświetlanie informacji takich jak movie_rating, movie_name dla każdego rekordu z tabeli movies.
+3.	Napisz zapytanie SQL odpowiedzialne za wyświetlanie rekordów z tabeli movies, dla których movie_rating jest mniejszy niż 14.
+4.	Napisz zapytanie SQL odpowiedzialne za wyświetlanie ofert z tabeli job_offer powiązanej z firmą, dla której movie_name rozpoczyna się od prefix'u IT.
