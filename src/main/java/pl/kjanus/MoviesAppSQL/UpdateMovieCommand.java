@@ -8,8 +8,9 @@ import java.sql.SQLException;
 
 @AllArgsConstructor
 public class UpdateMovieCommand implements SqlCommand<Boolean> {
-    private final Movie movie;
+
     private final Connection connection;
+    private final Movie movie;
 
     @Override
     public Boolean execute() {

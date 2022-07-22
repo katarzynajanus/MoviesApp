@@ -19,7 +19,7 @@ public class SelectAllMoviesCommand implements SqlCommand<List<Movie>>{
     public List<Movie> execute() {
         List<Movie> movies = new ArrayList<>();
         try(Statement statement = connection.createStatement()){
-            ResultSet resultSet = statement.executeQuery("SELECT  * FROM Moviesovies");
+            ResultSet resultSet = statement.executeQuery("SELECT  * FROM Movies");
             int id = resultSet.getInt("Id");
             String title = resultSet.getString("Title");
             String movieType = resultSet.getString("MovieType");
