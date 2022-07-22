@@ -13,7 +13,7 @@ public class InsertMovieCommand implements SqlCommand<Boolean> {
 
 
     public Boolean execute() {
-        String query = "INSERT INTO Movies";
+        String query = "INSERT INTO Movies(Title,MovieType)VALUES(?,?)";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, movie.getTitle());
             statement.setString(2, movie.getMovieType());
